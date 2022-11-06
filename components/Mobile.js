@@ -8,9 +8,9 @@ import {
 } from 'react-native';
 import React, {useState} from 'react';
 
-const Mobile = () => {
+const Mobile = props => {
   const [active, SetActive] = useState(false);
-  const [value, setValue] = useState('');
+  // const [value, setValue] = useState('');
 
   return (
     <View style={styles.mobile}>
@@ -26,10 +26,10 @@ const Mobile = () => {
           //   onFocus={() => SetActive(true)}
           //   onBlur={() => SetActive(false)}
           style={styles.inputText}
-          value={value}
+          value={props.value}
           onChangeText={text => {
-            setValue(text);
-            if (value.length === 9) {
+            props.setValue(text);
+            if (props.value.length === 9) {
               SetActive(true);
             } else {
               SetActive(false);
@@ -41,7 +41,9 @@ const Mobile = () => {
           maxLength={10}
         />
         {active && (
-          <TouchableOpacity style={styles.button}>
+          <TouchableOpacity
+            style={styles.button}
+            onPress={() => props.signInWithPhoneNumber(`+91 ${props.value}`)}>
             <Text style={{color: '#000'}}>Continue</Text>
           </TouchableOpacity>
         )}

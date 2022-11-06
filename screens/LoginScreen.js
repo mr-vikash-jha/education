@@ -1,11 +1,13 @@
-import {View, Text} from 'react-native';
-import React from 'react';
+import {View, Text, Button, TextInput} from 'react-native';
+import React, {useEffect, useState} from 'react';
 import UserInput from '../compoments/UserInput';
 import CustomButton from '../compoments/CustomButton';
-import Mobile from '../compoments/Mobile';
+import Mobile from '../components/Mobile';
+import auth from '@react-native-firebase/auth';
 
 const LoginScreen = () => {
   const [confirm, setConfirm] = useState(null);
+  const [value, setValue] = useState('');
 
   const [code, setCode] = useState('');
 
@@ -20,6 +22,7 @@ const LoginScreen = () => {
 
   const signInWithPhoneNumber = async phoneNumber => {
     const confirmation = await auth().signInWithPhoneNumber(phoneNumber);
+    console.log(confirmation);
     setConfirm(confirmation);
   };
 
@@ -33,10 +36,17 @@ const LoginScreen = () => {
 
   if (!confirm) {
     return (
-      <Button
-        title="Phone Number Sign In"
-        onPress={() => signInWithPhoneNumber('+917610875160')}
-      />
+      <>
+        <Mobile
+          value={value}
+          setValue={setValue}
+          signInWithPhoneNumber={signInWithPhoneNumber}
+        />
+        {/* <Button
+          title="Phone Number Sign In"
+          onPress={() => signInWithPhoneNumber('+91 9075501817')}
+        /> */}
+      </>
     );
   }
 
@@ -48,7 +58,11 @@ const LoginScreen = () => {
           justifyContent: 'center',
           alignItems: 'center',
         }}>
-        <TextInput value={code} onChangeText={text => setCode(text)} />
+        <TextInput
+          style={{borderWidth: 2, borderColor: 'red'}}
+          value={code}
+          onChangeText={text => setCode(text)}
+        />
         <Button title="Confirm Code" onPress={() => confirmCode()} />
       </View>
     </>
