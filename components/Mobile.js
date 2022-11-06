@@ -18,7 +18,7 @@ const Mobile = props => {
         <Image style={styles.logo} source={require('../Images/Login.png')} />
       </View>
 
-      <Text>You'll receive a 4 digit code</Text>
+      <Text>You'll receive a 6 digit code</Text>
       <Text>to verify next</Text>
 
       <View style={styles.inputtextBody}>
