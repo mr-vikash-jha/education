@@ -1,13 +1,13 @@
 import React from 'react';
-import {Text, View} from 'react-native';
-import LoginPage from './screens/LoginPage';
+import {View} from 'react-native';
 import LoginScreen from './screens/LoginScreen';
+import TestMyPrep from './screens/TestMyPrep';
 
 const App = () => {
   return (
     <View>
-      {/* <LoginPage /> */}
-      <LoginScreen />
+      {/* <LoginScreen/> */}
+      <TestMyPrep />
     </View>
   );
 };
