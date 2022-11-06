@@ -18,16 +18,56 @@ const RenderList = () => {
         }}
         keyExtractor={item => item.index}
       /> */}
-      <Card title={testPrepData[0].title} imageURL={testPrepData[0].imageURL} />
-      <Card title={testPrepData[0].title} imageURL={testPrepData[0].imageURL} />
-      <Card title={testPrepData[0].title} imageURL={testPrepData[0].imageURL} />
-      <Card title={testPrepData[0].title} imageURL={testPrepData[0].imageURL} />
-      <Card title={testPrepData[0].title} imageURL={testPrepData[0].imageURL} />
-      <Card title={testPrepData[0].title} imageURL={testPrepData[0].imageURL} />
-      <Card title={testPrepData[0].title} imageURL={testPrepData[0].imageURL} />
-      <Card title={testPrepData[0].title} imageURL={testPrepData[0].imageURL} />
-      <Card title={testPrepData[0].title} imageURL={testPrepData[0].imageURL} />
-      <Card title={testPrepData[0].title} imageURL={testPrepData[0].imageURL} />
+      <Card
+        color="green"
+        title={testPrepData[0].title}
+        imageURL={testPrepData[0].imageURL}
+      />
+      <Card
+        color="yellow"
+        title={testPrepData[1].title}
+        imageURL={testPrepData[1].imageURL}
+      />
+      <Card
+        color={'blue'}
+        title={testPrepData[2].title}
+        imageURL={testPrepData[2].imageURL}
+      />
+      <Card
+        color={'red'}
+        title={testPrepData[3].title}
+        imageURL={testPrepData[3].imageURL}
+      />
+      <Card
+        color={'green'}
+        title={testPrepData[4].title}
+        imageURL={testPrepData[4].imageURL}
+      />
+      <Card
+        color={'orange'}
+        title={testPrepData[5].title}
+        imageURL={testPrepData[5].imageURL}
+      />
+      <Card
+        color={'purple'}
+        title={testPrepData[6].title}
+        imageURL={testPrepData[6].imageURL}
+      />
+      <Card
+        color={'green'}
+        title={testPrepData[7].title}
+        imageURL={testPrepData[7].imageURL}
+      />
+      <Card
+        color={'green'}
+        title={testPrepData[8].title}
+        imageURL={testPrepData[8].imageURL}
+      />
+      <Card
+        color={'green'}
+        title={testPrepData[9].title}
+        imageURL={testPrepData[9].imageURL}
+      />
     </View>
   );
 };

@@ -1,7 +1,5 @@
 import {View, Text, Button, TextInput} from 'react-native';
 import React, {useEffect, useState} from 'react';
-import UserInput from '../compoments/UserInput';
-import CustomButton from '../compoments/CustomButton';
 import Mobile from '../components/Mobile';
 import auth from '@react-native-firebase/auth';
 

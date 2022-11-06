@@ -1,52 +1,52 @@
 const data = [
   {
     index: 1,
-    imageURL: '',
+    imageURL: require('../Images/test.png'),
     title: 'Sample Mocks & Past Papers',
   },
   {
     index: 2,
-    imageURL: '',
+    imageURL: require('../Images/package.png'),
     title: 'My Package(s)',
   },
   {
     index: 3,
-    imageURL: '',
+    imageURL: require('../Images/store.png'),
     title: 'EduStore',
   },
   {
     index: 4,
-    imageURL: '',
+    imageURL: require('../Images/list.png'),
     title: 'My Revision List',
   },
   {
     index: 5,
-    imageURL: '',
+    imageURL: require('../Images/bookmark.png'),
     title: 'My Bookmark List',
   },
   {
     index: 6,
-    imageURL: '',
+    imageURL: require('../Images/schedule.png'),
     title: 'My Test Scheduler',
   },
   {
     index: 7,
-    imageURL: '',
+    imageURL: require('../Images/report.png'),
     title: 'My Test Report',
   },
   {
     index: 8,
-    imageURL: '',
+    imageURL: require('../Images/meter.png'),
     title: 'My Syllabus Meter',
   },
   {
     index: 9,
-    imageURL: '',
+    imageURL: require('../Images/growth.png'),
     title: 'My Learning Index',
   },
   {
     index: 10,
-    imageURL: '',
+    imageURL: require('../Images/queries.png'),
     title: 'My Academic Queries',
   },
 ];

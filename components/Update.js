@@ -55,6 +55,7 @@ const styles = StyleSheet.create({
   },
   leftUpdateText: {
     fontSize: 12,
+    color: 'black',
   },
   rightUpdate: {
     paddingRight: '2%',
@@ -69,5 +70,6 @@ const styles = StyleSheet.create({
   },
   rightUpdateText: {
     fontSize: 12,
+    color: 'black',
   },
 });

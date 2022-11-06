@@ -1,10 +1,15 @@
-import {StyleSheet, Text, View} from 'react-native';
+import {Image, StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 
 const Message = () => {
   return (
     <View style={styles.main}>
-      <Text>Message</Text>
+      <Image
+        style={styles.icons}
+        source={require('../Images/message.png')}
+        height={30}
+        width={30}
+      />
     </View>
   );
 };
@@ -29,5 +34,8 @@ const styles = StyleSheet.create({
     elevation: 5,
     backgroundColor: 'red',
     position: 'absolute',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
   },
 });

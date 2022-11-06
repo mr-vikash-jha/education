@@ -7,8 +7,8 @@ import TestMyPrep from './screens/TestMyPrep';
 const App = () => {
   return (
     <View>
-      <LoginScreen />
-      {/* <TestMyPrep /> */}
+      {/* <LoginScreen /> */}
+      <TestMyPrep />
     </View>
   );
 };

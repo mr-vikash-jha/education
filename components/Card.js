@@ -1,13 +1,16 @@
-import {Image, StyleSheet, Text, View} from 'react-native';
+import {Image, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import React from 'react';
 
 const Card = props => {
   console.log(props);
   return (
-    <View style={styles.main}>
-      <Image source={props.imageURL} height={75} width={75} />
-      <Text>{props.title}</Text>
-    </View>
+    <TouchableOpacity style={styles.main}>
+      <View
+        style={{...styles.imageContainer, backgroundColor: `${props.color}`}}>
+        <Image source={props.imageURL} height={75} width={75} />
+      </View>
+      <Text style={styles.titleFont}>{props.title}</Text>
+    </TouchableOpacity>
   );
 };
 
@@ -29,5 +32,21 @@ const styles = StyleSheet.create({
     elevation: 5,
     borderRadius: 5,
     padding: 5,
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  imageContainer: {
+    width: 70,
+    height: 70,
+    borderRadius: 50,
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  titleFont: {
+    fontSize: 14,
+    color: 'black',
+    textAlign: 'center',
   },
 });

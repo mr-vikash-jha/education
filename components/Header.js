@@ -1,4 +1,4 @@
-import {StyleSheet, Text, View} from 'react-native';
+import {Image, StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 
 const Header = () => {
@@ -8,9 +8,25 @@ const Header = () => {
         <Text style={styles.mainHeadingText}>TestMyPrep</Text>
       </View>
 
-      <Text style={styles.icons}>WhatsApp</Text>
-      <Text style={styles.icons}>Share</Text>
-      <Text style={styles.icons}>???</Text>
+      <Image
+        style={styles.icons}
+        source={require('../Images/whatsapp.png')}
+        height={35}
+        width={35}
+        borderRadius={17}
+      />
+      <Image
+        style={styles.icons}
+        source={require('../Images/collaboration.png')}
+        height={35}
+        width={35}
+      />
+      <Image
+        style={styles.icons}
+        source={require('../Images/more.png')}
+        height={30}
+        width={30}
+      />
     </View>
   );
 };
@@ -32,5 +48,10 @@ const styles = StyleSheet.create({
   },
   icons: {
     marginRight: '3%',
+  },
+  mainHeadingText: {
+    fontSize: 20,
+    color: 'black',
+    fontWeight: 'bold',
   },
 });
