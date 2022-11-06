@@ -35,7 +35,7 @@ const styles = StyleSheet.create({
     height: '100%',
     width: '20%',
     paddingLeft: '2%',
-    backgroundColor: 'blue',
+    backgroundColor: '#613ec9',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'flex-start',
@@ -54,8 +54,9 @@ const styles = StyleSheet.create({
     left: -60,
   },
   leftUpdateText: {
-    fontSize: 12,
-    color: 'black',
+    fontSize: 14,
+    color: 'white',
+    fontWeight: 'bold',
   },
   rightUpdate: {
     paddingRight: '2%',
@@ -70,6 +71,6 @@ const styles = StyleSheet.create({
   },
   rightUpdateText: {
     fontSize: 12,
-    color: 'black',
+    color: 'white',
   },
 });

@@ -40,7 +40,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     height: '8%',
     alignItems: 'center',
-    backgroundColor: 'blue',
+    backgroundColor: '#8754eb',
   },
   mainHeading: {
     width: '50%',
@@ -51,7 +51,7 @@ const styles = StyleSheet.create({
   },
   mainHeadingText: {
     fontSize: 20,
-    color: 'black',
+    color: 'white',
     fontWeight: 'bold',
   },
 });
