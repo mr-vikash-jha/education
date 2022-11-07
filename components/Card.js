@@ -4,7 +4,7 @@ import React from 'react';
 const Card = props => {
   console.log(props);
   return (
-    <TouchableOpacity style={styles.main}>
+    <TouchableOpacity style={{...styles.main, ...props.style}}>
       <View
         style={{...styles.imageContainer, backgroundColor: `${props.color}`}}>
         <Image source={props.imageURL} height={75} width={75} />
@@ -18,9 +18,7 @@ export default Card;
 
 const styles = StyleSheet.create({
   main: {
-    margin: 7,
-    width: 111,
-    height: 120,
+    margin: '2.1%',
     backgroundColor: 'white',
     shadowColor: '#171717',
     shadowOffset: {
